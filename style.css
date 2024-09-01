@@ -514,8 +514,6 @@ html, body {
     margin-bottom: 50px;
 }
 
-.container {}
-
 .polosa {
     border: 1px solid #C4C4C4;
     margin-bottom: 31px;
@@ -561,6 +559,13 @@ html, body {
         justify-content: space-between;
         gap: 60px;
     }
+    .polosa {
+        width: 1000px;
+    }
+    .footer__logo {
+        margin-right: 400px;
+     }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -574,6 +579,14 @@ html, body {
         height: 60px;
         margin-bottom: 100px;
     }
+
+    .polosa {
+        width: 800px;
+    }
+
+    .footer__logo {
+        margin-right: 250px;
+     }
 
 }
 
@@ -592,6 +605,15 @@ html, body {
     .about {
         padding: 300px 0;
     }
+
+    .footer {
+        max-width: 250px;
+    }
+
+    .polosa {
+        width: 600px;
+    }
+
     .contact__button {
         display: flex;
         flex-direction: column;
@@ -599,9 +621,15 @@ html, body {
 
     .footer__info {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .footer__info p {
+        width: 200px;
+    }
+    .footer__logo {
+       margin-right: 200px;
     }
 
 }
