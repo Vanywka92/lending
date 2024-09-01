@@ -256,6 +256,10 @@ html, body {
     order: 1;
 }
 
+
+
+
+
 /*====================About Us============*/
 
 .about {
@@ -273,8 +277,9 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 635px;
+    max-width: 635px;
     height: 240px;
+    flex-wrap: nowrap;
 }
 
 .about__content h2 {
@@ -355,9 +360,9 @@ html, body {
 .pricing__content-item {
     display: flex;
     flex-direction: column;
-   width: 600px;
-   justify-content: space-between;
-    
+    width: 600px;
+    justify-content: space-between;
+
 }
 
 .pricing__content-item h3 {
@@ -368,6 +373,7 @@ html, body {
     color: #263238;
     margin-bottom: 19px;
 }
+
 .pricing__content-item p {
     font-weight: 300;
     font-size: 16px;
@@ -376,7 +382,7 @@ html, body {
     width: 100%;
     letter-spacing: 1px;
     text-align: justify;
-    
+
 }
 
 
@@ -384,13 +390,13 @@ html, body {
 .pricing__content-img {
     max-width: 100%;
     margin-bottom: 40px;
-    
+
 }
 
 .pricing__content-price {
     display: flex;
     align-items: center;
-    background: #EEEEEE ;
+    background: #EEEEEE;
     border-radius: 5px;
     width: 240px;
     height: 45px;
@@ -431,6 +437,7 @@ html, body {
 
     margin-bottom: 133px;
 }
+
 .contact__content {
     display: flex;
     gap: 111px;
@@ -442,8 +449,8 @@ html, body {
     width: 477px;
     height: 429px;
 }
-.contact__info {
-}
+
+.contact__info {}
 
 .contact__info h2 {
     text-align: start;
@@ -465,8 +472,8 @@ html, body {
 }
 
 
-.contact__button {
-}
+.contact__button {}
+
 .contanct__button-input {
     border: 1px solid #8F95A5;
     border-radius: 10px;
@@ -480,6 +487,7 @@ html, body {
     padding-left: 33px;
     margin-right: 12px;
 }
+
 .contact__button-btn {
     width: 264px;
     height: 80px;
@@ -505,8 +513,8 @@ html, body {
 .footer {
     margin-bottom: 50px;
 }
-.container {
-}
+
+.container {}
 
 .polosa {
     border: 1px solid #C4C4C4;
@@ -517,6 +525,7 @@ html, body {
     display: flex;
     justify-content: space-between;
 }
+
 .footer__logo {
     align-items: start;
 }
@@ -527,4 +536,72 @@ html, body {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 1px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .skills__grid {
+        grid-template-areas:
+            "a b"
+            "c d";
+    }
+
+    .listening {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .pricing__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about {
+        padding: 250px 0;
+    }
+
+    .contact__info p {
+
+        width: 350px;
+        height: 60px;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .skills__grid {
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d";
+    }
+
+    .listening {
+        display: block;
+    }
+    .about {
+        padding: 300px 0;
+    }
+    .contact__button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
